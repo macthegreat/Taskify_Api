@@ -12,4 +12,9 @@ public interface ITaskService
 // Method to create a new task
     Tasks CreateTask(Tasks task);
 
+// Method to update an existing task
+    Tasks UpdateTask(int id, Tasks task);
+    // Method to delete a task by its ID
+    bool DeleteTask(int id);
+
 }

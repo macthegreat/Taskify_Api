@@ -28,4 +28,29 @@ public class TaskService : ITaskService
         tasks.Add(task);
         return task;
     }
+
+    public Tasks UpdateTask(int id, Tasks task)
+    {
+        var existingTask = tasks.FirstOrDefault(t => t.Id == id);
+        if (existingTask != null)
+        {
+            existingTask.Title = task.Title;
+            existingTask.Description = task.Description;
+            existingTask.Priority = task.Priority;
+            existingTask.DueDate = task.DueDate;
+            existingTask.IsCompleted = task.IsCompleted;
+        }
+        return existingTask;
+    }
+
+    public bool DeleteTask(int id)
+    {
+        var taskToDelete = tasks.FirstOrDefault(t => t.Id == id);
+        if (taskToDelete != null)
+        {
+            tasks.Remove(taskToDelete);
+            return true;
+        }
+        return false;
+    }
 }

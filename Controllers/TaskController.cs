@@ -44,4 +44,25 @@ public class TaskController : ControllerBase
 
     }
 
+    [HttpPut("{id}")]
+    public IActionResult UpdateTask(int id, [FromBody] Tasks task)
+    {
+        var updatedTask = _taskService.UpdateTask(id, task);
+        if (updatedTask == null)
+        {
+            return NotFound();
+        }
+        return Ok(updatedTask);
+    }
+
+    [HttpDelete("{id}")]
+    public IActionResult DeleteTask(int id)
+    {
+        var isDeleted = _taskService.DeleteTask(id);
+        if (!isDeleted)
+        {
+            return NotFound();  
+        }
+        return NoContent();
+    }
 }
