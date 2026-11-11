@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "FEpt0z0/x3w=",
+  "success": true,
+  "projectFilePath": "/Users/administrator/Documents/c#_projects/Taskify/Taskify.csproj",
+  "expectedPackageFiles": [
+    "/Users/administrator/.nuget/packages/microsoft.extensions.apidescription.server/10.0.0/microsoft.extensions.apidescription.server.10.0.0.nupkg.sha512",
+    "/Users/administrator/.nuget/packages/microsoft.openapi/3.11.0/microsoft.openapi.3.11.0.nupkg.sha512",
+    "/Users/administrator/.nuget/packages/swashbuckle.aspnetcore/11.0.0/swashbuckle.aspnetcore.11.0.0.nupkg.sha512",
+    "/Users/administrator/.nuget/packages/swashbuckle.aspnetcore.swagger/11.0.0/swashbuckle.aspnetcore.swagger.11.0.0.nupkg.sha512",
+    "/Users/administrator/.nuget/packages/swashbuckle.aspnetcore.swaggergen/11.0.0/swashbuckle.aspnetcore.swaggergen.11.0.0.nupkg.sha512",
+    "/Users/administrator/.nuget/packages/swashbuckle.aspnetcore.swaggerui/11.0.0/swashbuckle.aspnetcore.swaggerui.11.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
