@@ -23,4 +23,9 @@ public class TaskService : ITaskService
     {
         return tasks.Where(t => t.Id == id).FirstOrDefault();
     }
+    public Tasks CreateTask(Tasks task)
+    {
+        tasks.Add(task);
+        return task;
+    }
 }

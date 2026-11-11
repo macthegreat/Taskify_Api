@@ -35,5 +35,13 @@ public class TaskController : ControllerBase
         }
         return Ok(result);
     }
+// POST: api/V1/Task
+    [HttpPost]
+    public IActionResult CreateTask([FromBody] Tasks task)
+    {
+        var createdTask = _taskService.CreateTask(task);
+        return CreatedAtAction(nameof(GetTaskById), new { id = createdTask.Id }, createdTask);
+
+    }
 
 }

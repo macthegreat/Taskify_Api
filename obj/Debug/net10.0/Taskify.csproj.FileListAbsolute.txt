@@ -33,3 +33,4 @@
 /Users/administrator/Documents/c#_projects/Taskify/bin/Debug/net10.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/administrator/Documents/c#_projects/Taskify/bin/Debug/net10.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/administrator/Documents/c#_projects/Taskify/bin/Debug/net10.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/administrator/Documents/c#_projects/Taskify/obj/Debug/net10.0/Taskify.sourcelink.json
